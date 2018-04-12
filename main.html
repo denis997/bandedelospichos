@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="css/try.css">
+<link rel="stylesheet" href="fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Bande De Los Pichos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body class="w3-black" >
+<div id="canvas"></div>
+<div id="fb-root"></div>
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center ">
+
+    <a href="#"   data-cont="HOME" class="w3-bar-item w3-button w3-hover-black " >
+
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black ">
+
+        <p>OUR STORY</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-hover-black ">
+
+        <p>CONCERTS</p>
+    </a>
+<!--social pop up-->
+    <section class="iframe-from-fb">
+
+        <div class="fb-page"
+             data-href="https://www.facebook.com/BandedelosApaches/"
+             data-tabs="timeline, events"
+             data-small-header="false"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="false">
+            <blockquote cite="https://www.facebook.com/BandedelosApaches/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/BandedelosApaches/">Bande de los Apaches</a></blockquote></div>
+
+    </section>
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a class="facebook"><i class="fa fa-facebook"></i></a>
+        <a  class="soundcloud"><i class="fab fa-soundcloud"></i></a>
+        <a  class="spotify"><i class="fab fa-spotify"></i></a>
+        <a  class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Our story</a>
+        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Concerts</a>
+
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-top-32 w3-center w3-black" id="home">
+        <canvas > </canvas>
+        <img src="images/LOGO%20BANDE%20DE%20LOS%20APACHES.png" alt="Logo" class="w3-image  " id="img" >
+
+
+    </header>
+    <!--video-->
+    <h2 class="w3-hover-black w3-content video-btn " id="btn">Check our new video</h2>
+
+
+
+
+    <div class="player" id="video">
+        <video class="player__video viewer" src="images/video.mp4" ></video>
+
+        <div class="player__controls">
+            <div class="progress">
+                <div class="progress__filled"></div>
+            </div>
+            <button class="player__button toggle" title="Toggle Play">►</button>
+            <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+            <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+            <button data-skip="-10" class="player__button">« 10s</button>
+            <button data-skip="25" class="player__button">25s »</button>
+        </div>
+    </div>
+
+    <!--video-->
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Our story</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p> I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <img class="bandphoto" src="images/bandphoto.jpg">
+
+
+
+
+
+
+
+    </div>
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">Concerts</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <h3>APRIL</h3>
+        <div class="w3-row w3-border">
+            <div class="w3-quarter w3-container w3-center ">
+
+                <p class="tickets">20.04.2018</p>
+            </div>
+            <div class="w3-quarter w3-container w3-center">
+                <h5></h5>
+                <p class="tickets">Operaen</p>
+            </div>
+            <div class="w3-quarter w3-container w3-center">
+                <h5></h5>
+                <p  class="tickets">Copenhagen, Denmark</p>
+            </div>
+            <div class="w3-quarter w3-container w3-center">
+                <h5></h5>
+                <p class="btn-buy">buy tickets</p>
+            </div>
+        </div>
+        <h3>MAY</h3>
+        <div class="w3-row w3-border">
+
+            <div class="w3-row w3-border">
+                <div class="w3-quarter w3-container w3-center ">
+
+                    <p class="tickets">05.05.2018</p>
+                    <p class="tickets"> 17.05.2018</p>
+                </div>
+                <div class="w3-quarter w3-container w3-center">
+                    <h5></h5>
+                    <p class="tickets">Musikhuset</p>
+                    <p class="tickets">Templet</p>
+                </div>
+                <div class="w3-quarter w3-container w3-center">
+                    <h5></h5>
+                    <p  class="tickets">Århus, Denmark</p>
+                    <p class="tickets">Copenhagen,Denmark</p>
+                </div>
+                <div class="w3-quarter w3-container w3-center">
+                    <h5></h5>
+                    <p class="btn-buy">buy tickets</p>
+                    <p class="btn-buy">buy tickets</p>
+                </div>
+        </div >
+
+    </div>
+    <!-- End Portfolio Section -->
+
+
+
+    <!-- Footer -->
+    <footer class="footer"  >
+       <a href="mailto:apachedanden@gmail.com"> apachebanden@gmail.com</a>
+           </footer>
+    <!-- End footer -->
+
+</div>
+
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<script rel="script" src="js/js.js"></script>
+
+</body>
+
+</html>
